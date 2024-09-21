@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:e_commerce_app_ui/pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class IntroPage extends StatelessWidget {
@@ -8,7 +9,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[200],
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -38,12 +39,12 @@ class IntroPage extends StatelessWidget {
           
               //button
               GestureDetector(
-                // onTap: ()=>Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context)=>HomePage(),
-                //   ),
-                // ),
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context)=>HomePage(),
+                  ),
+                ),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[900],
